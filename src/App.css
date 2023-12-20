@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 1484px;
     width: 100%;
     padding: 0 24px;
@@ -8,9 +8,30 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    overflow: hidden;
 }
 
-.wrapperCode{
-    max-width: 15%;
+.wrapperCode {
+    width: 15%;
     margin-top: 30px;
+    min-width: 320px;
+}
+
+.link {
+    max-width: 500px;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 5px;
+    }
+
+    .link {
+        max-width: 360px;
+    }
 }
